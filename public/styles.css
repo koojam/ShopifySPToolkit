@@ -1,0 +1,41 @@
+.social-proof-popup {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 15px;
+    max-width: 300px;
+    z-index: 1000;
+}
+
+.social-proof-popup p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.social-proof-popup .product-name {
+    font-weight: bold;
+}
+
+.social-proof-popup .time-ago {
+    color: #666;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.popup-close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #666;
+    line-height: 1;
+}
+
+.popup-close:hover {
+    color: #333;
+} 
