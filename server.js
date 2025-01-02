@@ -4,6 +4,7 @@ const app = express();
 const { Shopify } = require('@shopify/shopify-api');
 const { generateMockPurchase } = require('./utils/mockData');
 const path = require('path');
+const defaultConfig = require('./utils/config');
 
 const port = process.env.PORT || 3000;
 
@@ -36,6 +37,12 @@ app.get('/api/mock-purchases/:count', (req, res) => {
   const count = parseInt(req.params.count) || 5;
   const purchases = Array.from({ length: count }, () => generateMockPurchase());
   res.json(purchases);
+});
+
+// Add a new endpoint to get configuration
+app.get('/api/config', (req, res) => {
+    // In the future, this would fetch merchant-specific settings
+    res.json(defaultConfig);
 });
 
 app.get('/', (req, res) => {

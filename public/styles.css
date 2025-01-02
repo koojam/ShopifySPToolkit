@@ -1,19 +1,63 @@
 .social-proof-popup {
     position: fixed;
-    bottom: 20px;
-    left: 20px;
-    background: white;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    border-radius: 8px;
-    padding: 15px;
-    max-width: 300px;
+    padding: 15px 35px 15px 15px;
     z-index: 1000;
+    transition: all 0.5s ease-out;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.popup-image {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.popup-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.popup-text {
+    flex-grow: 1;
+    min-width: 0; /* Allows text to wrap properly in flex container */
+}
+
+.popup-header {
+    position: relative;
+    height: 20px;
+    padding: 5px 15px;
+}
+
+.popup-content {
+    padding: 0 15px 15px 15px;
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #666;
+    line-height: 1;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.popup-close:hover {
+    color: #333;
+    background-color: rgba(0,0,0,0.05);
 }
 
 .social-proof-popup p {
     margin: 0;
-    font-size: 14px;
-    color: #333;
 }
 
 .social-proof-popup .product-name {
@@ -21,21 +65,5 @@
 }
 
 .social-proof-popup .time-ago {
-    color: #666;
-    font-size: 12px;
     margin-top: 5px;
-}
-
-.popup-close {
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    cursor: pointer;
-    font-size: 20px;
-    color: #666;
-    line-height: 1;
-}
-
-.popup-close:hover {
-    color: #333;
 } 

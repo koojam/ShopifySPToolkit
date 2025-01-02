@@ -1,1 +1,72 @@
- 
+{
+  "name": "Social Proof Settings",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Timing Settings"
+    },
+    {
+      "type": "range",
+      "id": "popup_interval",
+      "label": "Time between popups",
+      "min": 5,
+      "max": 60,
+      "step": 5,
+      "default": 30,
+      "unit": "sec"
+    },
+    {
+      "type": "range",
+      "id": "popup_duration",
+      "label": "Popup display duration",
+      "min": 3,
+      "max": 15,
+      "step": 1,
+      "default": 8,
+      "unit": "sec"
+    },
+    {
+      "type": "header",
+      "content": "Display Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_product_image",
+      "label": "Show product image",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_time_ago",
+      "label": "Show purchase time",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "popup_position",
+      "label": "Popup position",
+      "options": [
+        { "value": "bottom-left", "label": "Bottom Left" },
+        { "value": "bottom-right", "label": "Bottom Right" },
+        { "value": "top-left", "label": "Top Left" },
+        { "value": "top-right", "label": "Top Right" }
+      ],
+      "default": "bottom-left"
+    },
+    {
+      "type": "header",
+      "content": "Style Settings"
+    },
+    {
+      "type": "font",
+      "id": "popup_font",
+      "label": "Font family"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    }
+  ]
+} 
