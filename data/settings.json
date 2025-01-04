@@ -1,0 +1,42 @@
+{
+  "timing": {
+    "interval": 14000,
+    "displayDuration": 5000,
+    "animationDuration": 500
+  },
+  "display": {
+    "showImage": true,
+    "showTimeAgo": true,
+    "showPrice": true,
+    "maxWidth": "400px",
+    "position": "bottom-left",
+    "showCloseButton": true,
+    "imageSize": "70px",
+    "imageShape": "rounded",
+    "imageBorder": true,
+    "allowClose": true,
+    "popupShape": "square"
+  },
+  "style": {
+    "fontFamily": "Helvetica, sans-serif",
+    "fontSize": "14px",
+    "backgroundColor": {
+      "hue": 0,
+      "saturation": 0,
+      "brightness": 0,
+      "alpha": 1
+    },
+    "textColor": {
+      "hue": 225.67164179104478,
+      "brightness": 1,
+      "saturation": 0,
+      "alpha": 1
+    },
+    "borderRadius": "8px",
+    "shadow": "0 2px 10px rgba(0,0,0,0.1)"
+  },
+  "text": {
+    "template": "{customer} from {location} just purchased *{product}* ",
+    "timeAgoFormat": "relative"
+  }
+}
